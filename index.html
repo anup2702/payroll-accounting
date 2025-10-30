@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payroll Accounting System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Payroll Accounting System</h1>
+    <form id="payrollForm">
+      <input type="text" id="employeeName" placeholder="Employee Name" required />
+      <input type="number" id="hoursWorked" placeholder="Hours Worked" required />
+      <input type="number" id="hourlyRate" placeholder="Hourly Rate" required />
+      <input type="number" id="deductions" placeholder="Deductions" required />
+      <button type="submit">Add Payroll</button>
+    </form>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Hours</th>
+          <th>Rate</th>
+          <th>Gross Pay</th>
+          <th>Tax (10%)</th>
+          <th>Deductions</th>
+          <th>Net Pay</th>
+        </tr>
+      </thead>
+      <tbody id="payrollTableBody"></tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
